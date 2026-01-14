@@ -1,0 +1,141 @@
+/* ===== ALLGEMEINE STYLES ===== */
+body {
+    display: flex;
+    background-color: #697565;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: fit-content;
+    padding : 0.6rem;
+    background-color: #181C14;
+    z-index: 10;
+}
+
+/* Navigationlinks mit Border-Styling */
+nav a {
+    color: #ECDFCC;
+    text-decoration: none;
+    padding : 0.5rem;
+    border: 0.1rem solid #3C3D37;
+}
+
+/* ===== MAIN CONTENT ===== */
+main {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* ===== ÜBERSCHRIFTEN ===== */
+h1 {
+    color: #ECDFCC;
+    text-align: center;    
+    background-color: #3C3D37;
+    padding : 1rem;
+    border-radius: 0.5rem;
+}
+
+h2 {
+    color: #ECDFCC;
+    text-align: center;
+    background-color: #3C3D37;
+    padding : 1rem;
+    border-radius: 0.5rem;
+}
+
+/* ===== TEXT-ELEMENTE ===== */
+/* Absätze mit dunklem Hintergrund */
+p {
+    color: #ECDFCC;
+    background-color: #3C3D37;
+    padding: 1rem;
+    border-radius: 0.5rem; 
+}
+
+/* Code-Blöcke mit Scroll-Funktion */
+pre {
+    background-color: #3C3D37;
+    color: #ECDFCC;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+}
+
+/* ===== LISTEN ===== */
+li {
+    margin-left: 0.5rem;
+}
+
+/* ===== TABELLEN ===== */
+table {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-collapse: separate;
+    border-spacing: 1rem 0;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+th{
+    color:#ECDFCC;
+    background-color: #3C3D37;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-weight: normal;
+}
+
+/* ===== DIVS FÜR BEISPIELE ===== */
+/* Reset-Styles für Überschriften in Divs */
+div h1{
+    all: revert;
+}
+
+/* Reset-Styles für Absätze in Divs */
+div p{
+    all: revert;
+}
+
+/* Weiße Box für Ergebnis-Anzeige */
+div {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* ===== LAYOUT-KOMPONENTEN ===== */
+/* Flexible Row mit Bild und Text */
+.content-row {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #3C3D37;
+}
+
+/* Absatz in Content-Row */
+.content-row p {
+    flex: 1;
+    margin: 0;
+    color: #ECDFCC;
+    font-size: xx-large;
+}
+
+/* Bild nach rechts*/
+.content-row img {
+    order: 2;
+}
+
+/* Bild unten */
+.image-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: #3C3D37;
+}
